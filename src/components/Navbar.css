@@ -1,0 +1,94 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; 
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-icons a {
+    color: #0b75bb; 
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-icons a:hover {
+    transform: scale(1.5);
+    color: #007bff; 
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+    padding: 5px 10px;
+  }
+  
+  .nav-button:hover {
+    color: #007bff;
+    transform: scale(1.05);
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .nav-button:focus {
+    outline: none;
+  }
+  
+  /* Active button underline */
+  .nav-button.active {
+    border-bottom: 3px solid #007bff;
+    color: #007bff;
+  }
+  /* Dark Theme Styles for Navbar */
+body[data-theme="dark"] .navbar-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 6px -2px rgba(255, 255, 255, 0.1);
+}
+
+body[data-theme="dark"] .navbar-brand {
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .nav-button {
+  color: #dddddd;
+}
+
+body[data-theme="dark"] .nav-button:hover {
+  color: #66b2ff;
+}
+
+body[data-theme="dark"] .nav-icons a {
+  color: #cccccc;
+}
+
+body[data-theme="dark"] .nav-icons a:hover {
+  color: #66b2ff;
+}
+.navbar-container,
+.nav-button,
+.nav-icons a {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+  

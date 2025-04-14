@@ -1,0 +1,210 @@
+h1{
+  font-size: 50px;
+}
+
+p{
+    font-size: 1.4rem;
+}
+h4{
+  font-size: xx-large;
+}
+.typing-text{
+  font-size: xx-large;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+  width: 0;
+  animation: typing 1.5s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* .delay {
+  animation-delay: 4s; 
+} */
+img{
+  width: 400px;
+  height: auto;
+}
+.image-block{
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* width: 1000px; */
+}
+.about-content {
+    /* display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: auto; */
+    padding-bottom: 50px;
+  }
+  
+  .card-section {
+    /* background-color: #f9f9f9; */
+    padding: 1rem;
+    border-radius: 16px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+    /* color: black; */
+  }
+  
+  body[data-theme="dark"] .card-section{
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  body[data-theme="light"] .card-section{
+    background-color: #ffffff;
+    color: black;
+  }
+    
+    
+
+/* .collapsible-section {
+    margin: 1.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+  }
+  
+  .section-body {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+  } */
+  body[data-theme="light"] .collapsible-section{
+    background-color: #f9f9f9;
+    color: black;
+  }
+  body[data-theme="dark"] .collapsible-section{
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+  .collapsible-section {
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .collapsible-section:hover {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  }
+  
+  .section-header {
+    padding: 1rem 1.5rem;
+    border-radius: 12px 12px 0 0;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  body[data-theme="light"] .section-header{
+    /* background-color: #e9ecef; */
+    color: black;
+  }
+  
+  body[data-theme="light"] .section-header:hover {
+    background-color: #d4dde7;
+    color: #212529;
+  }
+  
+  body[data-theme="light"] .section-header:active {
+    background-color: #c2ceda;
+    color: #1a1a1a;
+  }
+
+  body[data-theme="dark"] .section-header:hover {
+    background-color: #212529;
+    color: #d4dde7;
+  }
+  
+  body[data-theme="dark"] .section-header:active {
+    background-color: #1a1a1a;
+    color: #c2ceda;
+  }
+  
+  .section-body {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.4s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+    
+  .section-content {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    
+    border-radius: 0 0 12px 12px;
+  }
+  body[data-theme="light"] .section-content{
+    background-color: white;
+  }
+  body[data-theme="dark"] .section-content{
+    background-color: #1a1a1a;
+  }
+  
+  .section-content ul {
+    padding-left: 1.2rem;
+  }
+  
+  .section-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .section-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .fullscreen-carousel {
+    height: 100vh;
+    overflow: hidden;
+
+  }
+  
+  .carousel-img {
+    height: 98vh;
+    width: 90%;
+    object-fit: contain;
+    transition: transform 1s ease-in-out;
+  }
+.fullscreen-carousel{
+  margin-top: 30px;
+}

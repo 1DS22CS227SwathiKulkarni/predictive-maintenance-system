@@ -1,0 +1,74 @@
+h1{
+    margin-bottom: 10px;
+}
+.chart-container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    color: black;
+    height: 900px;
+    padding: 30px;
+    margin-bottom: 0px;
+}
+.chart{
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding-top: 30px;
+
+}
+.chart:hover{
+    transform: scale(1.08);
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    width: 1200px; 
+    padding: 30px; 
+    padding-right: 30px;  
+}
+.para{
+    width: 700px;
+}
+.graphs{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 30px;
+    margin-top: 0px;
+}
+
+.graph1, .graph2{
+    padding-top: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.graph1:hover, .graph2:hover{
+    transform: scale(1.08);
+}
+.graph1{
+    margin-bottom: 45px;
+}
+body[data-theme="dark"] .chart-container{
+    color: white;
+}
+body[data-theme="dark"] .chart{
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(89, 89, 89, 0.5);
+}
+body[data-theme="dark"] .graph1{
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(89, 89, 89, 0.5);
+    color: white;
+}
+body[data-theme="dark"] .graph2{
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(89, 89, 89, 0.5);
+    color: white;
+}

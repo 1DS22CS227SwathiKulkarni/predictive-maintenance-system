@@ -1,0 +1,189 @@
+/* Theme-based background and text */
+body[data-theme="light"] {
+    background-color: ghostwhite;
+    color: black;
+  }
+  
+  body[data-theme="dark"] {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 50px;
+    padding: 35px;
+    caret-color: transparent; 
+  }
+  
+  /* Dark mode button tweaks */
+  body[data-theme="dark"] .predict-button {
+    background-color: white;
+    color: black;
+  }
+  
+  body[data-theme="dark"] .predict-button:hover {
+    border: 2px solid #1976d2;
+  }
+  
+  .container-one {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    width: 1300px;
+    height: 550px;
+    margin-top: 40px;
+  }
+  .container-one::before {
+    position: relative;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../public/geometric.jpg");
+    transform: skewY(-5deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+
+  /* img{
+    width: 1000px;
+    transform: scale3d(-0.5);
+  } */
+  
+  body[data-theme="dark"] .container {
+    color: white;
+  }
+  
+  .predict-button {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 450;
+    background-color: white;
+    border-radius: 40px;
+    padding: 13px;
+    margin-top: 40px;
+  }
+  
+  .predict-button:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes bounceIn {
+    0% { transform: translateY(-20px); opacity: 0; }
+    50% { transform: translateY(10px); opacity: 0.5; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  .about-button, .predict-button, .history-button {
+    animation: bounceIn 0.8s ease-out;
+  }
+  
+  .predict-button {
+    animation-delay: 1.2s;
+  }
+  
+  .navbar-container {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    margin: 0px;
+    width: 100%;
+  }
+  
+  .heading {
+    font-size: 80px;
+  }
+  
+.theme-toggle {
+    position: absolute;
+    top: 11%;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(24px);
+  }
+
+  @keyframes customSpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.gear-one {
+  position: absolute;
+  bottom: 5%;;
+  left: 5%; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fa-cog {
+  color: rgb(150, 144, 144); 
+  animation: customSpin 20s linear infinite;
+}
+
+.gear-two{
+  position: absolute;
+  bottom: 14%;
+  left: 24%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+

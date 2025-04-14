@@ -1,0 +1,74 @@
+.prediction-card {
+    
+    padding: 0px ;
+    /* margin-bottom: 20px; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: sans-serif;
+    margin: 0px;
+  }
+ 
+  .prediction-status {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    gap: 4px;
+    padding-left: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .dot.low {
+    background-color: #4ade80;
+  }
+  
+  .dot.medium {
+    background-color: #facc15;
+  }
+  
+  .dot.high {
+    background-color: #f87171;
+  }
+  
+  .prediction-info {
+    background: white;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 8 columns for each field */
+    gap: 0px;
+    text-align: center;
+    font-size: 0.95rem;
+    
+    margin: 15px;
+    padding: 20px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .prediction-info div {
+    /* padding: 2px; */
+    align-self: center;
+    font-weight: bold;
+  }
+  body[data-theme="dark"] .prediction-info{
+    background-color: #1e1e1e;
+    color: white;
+}
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 40px;
+  align-self: center;
+}
+
+.delete-btn:hover {
+  background-color: #e60000;
+}
+ 

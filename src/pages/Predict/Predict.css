@@ -1,0 +1,91 @@
+.predict-page {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+
+}
+form {
+  color:  black;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  /* border: 2px solid rgb(63, 140, 229); */
+  /* border-radius: 10px; */
+  /* background-color: white; */
+  width: 400px;
+}
+body[data-theme="dark"] form{
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(89, 89, 89, 0.75);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid black;
+  caret-color: black;
+  /* border-radius: 20px; */
+}
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: rgb(35, 120, 239);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  width: 180px;
+  caret-color: transparent;
+}
+input[type="submit"]:hover {
+  transform: scale(1.1);
+  background-color: rgb(35, 120, 239);
+}
+
+body[data-theme="dark"] form{
+  /* background-color: #1e1e1e; */
+  color: white;
+}
+.vertical-progress {
+  width: 15px;
+  height: 500px;
+  background-color: navy;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.progress-fill {
+  width: 100%;
+  background-color: white;
+  transition: height 0.4s ease;
+}
+.form-layout {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 600px;
+  padding: 50px;
+  background-image: url(../../../public/waves.jpg);
+  background-size: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
