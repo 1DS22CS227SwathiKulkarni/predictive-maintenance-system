@@ -20,7 +20,7 @@ const FailureTypeBarChart = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/chart-data/")
+      .get("https://predictive-maintenance-01qp.onrender.com/chart-data/")
       .then((response) => {
         const jsonData = response.data.failure_type_counts;
 
