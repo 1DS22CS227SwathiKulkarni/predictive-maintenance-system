@@ -27,7 +27,7 @@ const Predict = () => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/predict/",
+        "https://predictive-maintenance-01qp.onrender.com/predict/",
         formData
       );
       const predictionResult = response.data;
