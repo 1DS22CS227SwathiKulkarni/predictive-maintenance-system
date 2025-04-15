@@ -21,7 +21,7 @@ class History extends React.Component {
 
   getPredicts() {
     axios
-      .get("http://127.0.0.1:8000/predictapi/")
+      .get("https://predictive-maintenance-01qp.onrender.com/predictapi/")
       .then((res) => {
         const sortedData = res.data.sort(
           (a, b) => new Date(b.created_at) - new Date(a.created_at)
@@ -67,7 +67,7 @@ class History extends React.Component {
 
   handleDelete = (id) => {
     axios
-      .delete(`http://127.0.0.1:8000/predictapi/${id}/`)
+      .delete(`https://predictive-maintenance-01qp.onrender.com/predictapi/${id}/`)
       .then(() => {
         toast.success("Prediction deleted successfully");
         const updatedPredicts = this.state.predicts.filter((p) => p.id !== id);
